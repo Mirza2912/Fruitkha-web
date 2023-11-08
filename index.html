@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
+    <link rel="stylesheet" href="/Css/style.css">
+    <link rel="stylesheet" href="/media query/responsive.css">
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@200..900&display=swap">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+
+
+    <!-- Navbar -->
+    <div id="main">
+
+        <nav>
+            <img src="/Images/logo.png" alt="" href="#">
+            <div id="nav-menu">
+                <a href="/Html/index.html">
+                    <h1 class="active">home</h1>
+                </a>
+                <a href="/Html/about.html">
+                    <h1>about</h1>
+                </a>
+                <a href="#">
+                    <h1 id="selector">pages</h1>
+                </a>
+                <div class="dropdowns" id="dropdowns">
+                    <a href=""><h1>404 pages</h1></a>
+                    <a href=""><h1>About</h1></a>
+                    <a href=""><h1>Cart</h1></a>
+                    <a href=""><h1>Chech Out</h1></a>
+                    <a href=""><h1>Contact</h1></a>
+                    <a href=""><h1>News</h1></a>
+                    <a href=""><h1>Shop</h1></a>
+                </div>
+                <a href=""><h1 id="news">news</h1></a>
+                <div id="news-dd" class="dropdowns">
+                    <a href=""><h1>News</h1></a>
+                   <a href=""> <h1>Single News</h1></a>
+                </div>
+                <a href=""><h1>contact</h1></a>
+                <a href=""><h1 id="shop">shop</h1></a>
+                <div class="dropdowns" id="shop-dd">
+                    <a href=""><h1>Shop</h1></a>
+                    <a href=""><h1>Check Out</h1></a>
+                    <a href=""><h1>Single Product</h1></a>
+                    <a href=""><h1>Cart</h1></a>
+                </div>
+            </div>
+            <div id="right-menu">
+                <i class="ri-shopping-cart-2-fill"></i>
+                <i class="fa fa-search" aria-hidden="true"></i>
+            </div>
+        </nav>
+
+
+        <!-- Page 1 -->
+
+        <div id="page-1">
+            <i id="prev" class="ri-arrow-left-s-line" onclick="controller(-1)"></i>
+            <i id="next" class="ri-arrow-right-s-line" onclick="controller(1)"></i>
+            <div id="slide-1" class="slide">
+                <img src="/Images/hero-bg-2.jpg" alt="">
+                <div class="img-text">
+                    <h3>Fresh Vegetables</h3>
+                    <h1>100% Organic Collection</h1>
+                    <button id="visit-btn" class="btn">Visit Shop</button>
+                    <button id="contact-btn">Contact Us</button>
+                </div>
+            </div>
+            <div id="slide-2" class="slide">
+                <img src="/Images/hero-bg.jpg" alt="">
+                <div class="img-text">
+                    <h3>Fresh & Organics</h3>
+                    <h1>Delicious Seasonal Fruits</h1>
+                    <button id="visit-btn" class="btn">Fruit Collection</button>
+                    <button id="contact-btn">Contact Us</button>
+                </div>
+            </div>
+            <div id="slide-3" class="slide">
+                <img src="/Images/hero-bg-3.jpg" alt="">
+                <div class="img-text">
+                    <h3>Mega Sale Doing On!</h3>
+                    <h1>Get December Discount</h1>
+                    <button id="visit-btn" class="btn">Visit Shop</button>
+                    <button id="contact-btn">Contact Us</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Page 2 -->
+
+        <div id="page-2">
+
+            <!-- Three Products -->
+            <div id="three-product">
+                <div class="shipping">
+                    <i class="fa-solid fa-truck-fast"></i>
+                    <h3>Free Shipping <br> <span>When order over $75</span></h3>
+                </div>
+                <div class="shipping">
+                    <i class="fa-solid fa-phone-volume"></i>
+                    <h3>24/7 Support <br> <span>When order over $75</span></h3>
+                </div>
+                <div class="shipping">
+                    <i class="fa-solid fa-arrows-rotate"></i>
+                    <h3>Refund<br> <span>When order over $75</span></h3>
+                </div>
+            </div>
+
+            <!-- Our Products -->
+            <div id="our-product">
+                <h1><span>Our</span> Product</h1>
+                <!-- <h1 id="line">_</h1> -->
+                <hr>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, fuga quas itaque eveniet beatae
+                    optio.</p>
+            </div>
+
+        </div>
+
+        <!-- Page 3 -->
+
+        <div id="page-3">
+
+            <!-- Products -->
+            <div id="Products">
+                <div class="product">
+                    <img src="/Images/product-img-1.jpg" alt="">
+                    <div class="text">
+                        <h3>Strawberry</h3>
+                        <span>Per Kg</span>
+                        <h2>85$</h2>
+                    </div>
+                    <button><i class="ri-shopping-cart-2-fill"></i>Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="/Images/product-img-1.jpg" alt="">
+                    <div class="text">
+                        <h3>Strawberry</h3>
+                        <span>Per Kg</span>
+                        <h2>85$</h2>
+                    </div>
+                    <button><i class="ri-shopping-cart-2-fill"></i>Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="/Images/product-img-1.jpg" alt="">
+                    <div class="text">
+                        <h3>Strawberry</h3>
+                        <span>Per Kg</span>
+                        <h2>85$</h2>
+                    </div>
+                    <button><i class="ri-shopping-cart-2-fill"></i>Add to Cart</button>
+                </div>
+            </div>
+
+            <!-- Deal -->
+            <div id="deal">
+                <div id="deal-img">
+                    <img src="/Images/a.jpg" alt="">
+                </div>
+                <div id="deal-text">
+                    <h1><span>Deal</span> of the month</h1>
+                    <h5>HIKAN STRWABERRY</h5>
+                    <p>Quisquam minus maiores repudiandae nobis, minima saepe id, fugit ullam similique! Beatae, minima
+                        quisquam molestias facere ea. Perspiciatis unde omnis iste natus error sit voluptatem accusant
+                    </p>
+                    <div id="deal-box">
+                        <div class="box" id="box1">
+                            <p>77 <br> <span>Days</span></p>
+                        </div>
+                        <div class="box">
+                            <p>22 <br> <span>Hours</span></p>
+                        </div>
+                        <div class="box">
+                            <p>53 <br> <span>Mins</span></p>
+                        </div>
+                        <div class="box">
+                            <p>43 <br> <span>Secs</span></p>
+                        </div>
+                    </div>
+                    <button><i class="ri-shopping-cart-2-fill"></i>Add to Cart</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Page 4 -->
+
+        <div id="page-4">
+            <div class="info">
+                <img src="/Images/avatar1.png" alt="">
+                <h3>Saira Hakim <br><span>Local Shop Owner</span></h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab odio eos quidem id est quis optio
+                    quibusdam eligendi dolores aliquid. Aliquid optio sunt voluptatem temporibus quaerat error illum
+                    dignissimos at.</p><br>
+                <i class="fa-solid fa-quote-right"></i>
+            </div>
+            <div class="info">
+                <img src="/Images/avatar2.png" alt="">
+                <h3>David Niph <br><span>Local Shop Owner</span></h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab odio eos quidem id est quis optio
+                    quibusdam eligendi dolores aliquid. Aliquid optio sunt voluptatem temporibus quaerat error illum
+                    dignissimos at.</p><br>
+                <i class="fa-solid fa-quote-right"></i>
+            </div>
+            <div class="info">
+                <img src="/Images/avatar3.png" alt="">
+                <h3>Jacob Sikim <br><span>Local Shop Owner</span></h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab odio eos quidem id est quis optio
+                    quibusdam eligendi dolores aliquid. Aliquid optio sunt voluptatem temporibus quaerat error illum
+                    dignissimos at.</p><br>
+                <i class="fa-solid fa-quote-right"></i>
+            </div>
+            <div id="video1">
+                <div id="vid">
+                    <img src="/Images/abt.jpg" alt="">
+                </div>
+                <div id="fruitkha">
+                    <p id="p1">Since Year 1999</p>
+                    <h1>We are <span>Fruitkha</span></h1>
+                    <p id="big">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, sunt aliquam alias deserunt dolore amet inventore iusto autem repellat quas aut corporis distinctio ab delectus molestiae cumque ex voluptas at libero voluptates ut dolorem voluptate blanditiis aperiam? Omnis voluptate neque dicta sed quaerat tempora expedita dolorem quisquam, sapiente, esse ex?</p>
+                    <a href="/Html/about.html"><button>know more</button></a>
+                </div>
+            </div>
+            <div id="decsale">
+                <h1>December sale is on! <br>
+                    with big <span>Discount</span></h1>
+                <p>Sale! <span>50%</span>  off</p>
+                <button id="btn5">Shop Now</button>
+            </div>
+        </div>
+
+        <!-- Page 5 -->
+
+        <div id="page-5">
+
+            <!-- Our News -->
+            <div id="our-product">
+                <h1><span>Our</span> News</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, fuga quas itaque eveniet beatae
+                    optio.</p>
+            </div>
+
+            <!-- News Cards -->
+            <div id="card">
+                <div class="news-card">
+                    <div class="news-img">
+                        <img src="/Images/news-bg-1.jpg" alt="">
+                    </div>
+                    <div class="news-card-text">
+                        <h3>You will vainly look for fruit on it in autumn.</h3>
+                        <p id="icons"><i class="ri-admin-fill"></i> Admin <span><i class="ri-calendar-fill"></i> 27 December, 2019 </span> </p>
+                        <p>Vivamus lacus enim, pulvinar vel nulla sed, scelerisque rhoncus nisi. Praesent vitae mattis nunc, egestas viverra eros.</p><br>
+                        <a href="#">read more<i class="ri-arrow-right-s-line"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="news-card">
+                    <div class="news-img">
+                        <img src="/Images/news-bg-2.jpg" alt="">
+                    </div>
+                    <div class="news-card-text">
+                        <h3>A man's worth has its season, like tomato.</h3>
+                        <p id="icons"><i class="ri-admin-fill"></i> Admin <span><i class="ri-calendar-fill"></i> 27 December, 2019 </span> </p>
+                        <p>Vivamus lacus enim, pulvinar vel nulla sed, scelerisque rhoncus nisi. Praesent vitae mattis nunc, egestas viverra eros.</p><br>
+                        <a href="#">read more<i class="ri-arrow-right-s-line"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="news-card">
+                    <div class="news-img">
+                        <img src="/Images/news-bg-3.jpg" alt="">
+                    </div>
+                    <div class="news-card-text">
+                        <h3>Good thoughts bear good fresh juicy fruit.</h3>
+                        <p id="icons"><i class="ri-admin-fill"></i> Admin <span><i class="ri-calendar-fill"></i> 27 December, 2019 </span> </p>
+                        <p>Vivamus lacus enim, pulvinar vel nulla sed, scelerisque rhoncus nisi. Praesent vitae mattis nunc, egestas viverra eros.</p><br>
+                        <a href="#">read more<i class="ri-arrow-right-s-line"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div id="button">
+                <a href="#"><button>More News</button></a>
+            </div>
+
+            <div id="logo">
+                <img src="/Images/2.png" alt="">
+                <img src="/Images/3.png" alt="">
+                <img src="/Images/4.png" alt="">
+                <img src="/Images/5.png" alt="">
+            </div>
+        </div>
+
+
+    <!-- Page-6 -->
+
+    <div id="page-6">
+        <div id="footer">
+            <div class="footer-child">
+                <h1>About Us</h1>
+                <h1 id="line">_</h1>
+                <p>Ut enim ad minim veniam perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae.</p>
+            </div>
+            <div class="footer-child" id="child-2">
+                <h1>Get in Touch</h1>
+                <h1 id="line">_</h1>
+                <p>34/8, East Hukupara, Gifirtok, Sadan.</p>
+                <p>support@fruitkha.com</p>
+                <p>+00 111 222 3333</p>
+            </div>
+            <div class="footer-child" id="child-3">
+                <h1>Pages</h1>
+                <h1 id="line">_</h1>
+                <a href="" id="first-a"> <i class="ri-arrow-right-s-line"></i> Home</a>
+                <a href="/Html/about.html"><i class="ri-arrow-right-s-line"></i> About</a>
+                <a href=""><i class="ri-arrow-right-s-line"></i> Shop</a>
+                <a href=""><i class="ri-arrow-right-s-line"></i> News</a>
+                <a href=""><i class="ri-arrow-right-s-line"></i> Contact</a>
+            </div>
+            <div class="footer-child" id="child-4">
+                <h1>Subscribe</h1>
+                <h1 id="line">_</h1>
+                <p>Subscribe to our mailing list to get the latest updates.</p>
+            </div>
+        </div>
+        <div id="end-footer">
+            <p>Copyrights © 2019 - <span>Imran Hossain</span>, All Rights Reserved.</p>
+            <div id="end-footer-icons">
+                <i class="ri-facebook-fill"></i>
+                <i class="ri-twitter-fill"></i>
+                <i class="ri-instagram-line"></i>
+                <i class="ri-linkedin-box-fill"></i>
+                <i class="fa-regular fa-basketball"></i>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" integrity="sha512-Ic9xkERjyZ1xgJ5svx3y0u3xrvfT/uPkV99LBwe68xjy/mGtO+4eURHZBW2xW4SZbFrF1Tf090XqB+EVgXnVjw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="/JS/script.js"></script>
+</body>
+
+</html>
